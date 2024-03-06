@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+
+<html lang="fa" dir="rtl">
+  
+<head>
+    
+<meta charset="UTF-8" />
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <script src="https://cdn.tailwindcss.com"></script>   
+<script src="tailwind.js"></script>
+    
+<script>
+      
+try {
+        
+tailwind.config = {
+          
+theme: {
+            
+extend: {
+              
+fontFamily: {
+                
+vazir: "'Vazir', sans-serif",
+              
+},
+            
+},
+          
+},
+        
+};
+      
+} catch {}
+    
+</script>
+    
+<style type="text/tailwindcss">
+      @layer base {
+       
+ @font-face {
+          
+font-family: "Vazir";
+          
+font-weight: normal;
+          
+src: url("fonts/Vazir.ttf");
+        }
+
+        
+@font-face {
+          font-family: "Vazir";
+          
+font-weight: bold;
+          
+src: url("fonts/Vazir-Bold.ttf");
+        
+}
+      
+}
+
+      
+@layer utilities {
+        .max-width-wrapper 
+{@apply 
+max-w-5xl mx-auto px-[4px];}
+   
+        
+.primary-gradient {
+   @apply bg-gradient-to-l from-pink-500 via-red-500 to-yellow-500;          
+}
+      
+}
+    
+</style>
+  
+</head>
+  
+<body class="font-vazir bg-gray-400 min-h-[1000px]">
+    
+	<div class="w-full h-2 primary-gradient" id="super-header"></div>
+    
+	
+     <header id="header" class="sticky top-0 w-full z-10 bg-white/50">
+    
+
+<div id="header-inner-wrapper" class="max-width-wrapper justify-between px-4 py-4 flex" >
+         
+<nav>
+          
+<h1 class="font-bold text-gray-800 border-dotted border-y-2 border-black" id="heading">
+            
+<a href="gallery1.html">گالری بستنی</a>
+          
+</h1>
+      
+</nav>
+
+<div class="max-width-wrapper"></div>           
+     <div id="search-wrapper" class="relative mr-4">
+   <a href="gallery2.html"><img src="search.svg" id="search-icon" class="h-4 absolute left-4 top-1.5" /></a>
+   <input type="text" placeholder="قیمت" id="search-input" class="outline-none border border-gray-400 text-sm text-gray-700 rounded-full w-full px-4 py-1" />
+</div>
+	    
+     </div>  
+    
+</header>
+<div id="hero-wrapper" class="relative bg-[#fff899] min-h-[18rem] h-[60vh] flex justify-center">
+      <img src="hero.jpg" id="hero-image" class="h-full w-96 object-cover"/>
+      <img src="wave.svg" id="hero-wave" class="absolute bottom-0 w-full max-h-40"/>
+</div>
+</body>
+
+</html>
+  

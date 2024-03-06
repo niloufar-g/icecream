@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+<script src="tailwind.js"></script>
+    <style>
+    
+      @layer components {
+        .ice-cream {
+          @apply gradient-border;
+        }
+        .ice-cream img {
+          @apply w-72 h-60 rounded-md object-cover;
+        }
+        .ice-cream img:hover {
+         border-radius: 10%;
+
+         border:3px solid green;}
+    </style>
+  </head>
+ <body class="bg-cyan-500">
+<div class="grid grid-cols-4"></div>
+
+    <main class="max-width-wrapper py-10 lg:py-20 flex flex-row flex-wrap justify-evenly gap-4 md:gap-6 lg:gap-8 ">
+       
+<figure class="ice-cream">
+        <img src="11.jpg" />
+      </figure>
+      <figure class="ice-cream">
+        <img src="22.jpg" />
+      </figure>
+     <figure class="ice-cream">
+        <img src="3.jpg" />
+      </figure>
+     <figure class="ice-cream">
+        <img src="4.jpg" />
+      </figure>
+      <figure class="ice-cream">
+        <img src="5.jpg" />
+      </figure>
+     <figure class="ice-cream">
+        <img src="6.jpg" />
+      </figure>
+    </main>
+
+
+  </body>
+</html>
